@@ -11,7 +11,7 @@ import torch.optim as optim
 import numpy as np
 
 
-from my_mnist import My_dataset
+#from my_mnist import My_dataset
 
 class DeepSVDDTrainer(BaseTrainer):
 
@@ -38,7 +38,7 @@ class DeepSVDDTrainer(BaseTrainer):
         self.test_time = None
         self.test_scores = None
 
-        self.my_dataset = My_dataset()
+        #self.my_dataset = My_dataset()
 
     def train(self, dataset: BaseADDataset, net: BaseNet):
         logger = logging.getLogger()
